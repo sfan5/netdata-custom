@@ -46,39 +46,7 @@ const versionsMatch = (v1, v2) => {
 }
 
 const VersionControl = ({ currentVersion, releaseChannel }) => {
-  const isStableReleaseChannel = releaseChannel === "stable"
-  const [githubVersion] = useHttp(NETDATA_LATEST_VERSION_URL, isStableReleaseChannel, true)
-
-  const [gcsVersionResponse] = useHttp(NETDATA_LATEST_GCS_VERSION_URL, !isStableReleaseChannel)
-  const [mediaLinkResponse] = useHttp(gcsVersionResponse?.mediaLink, Boolean(gcsVersionResponse))
-
-  const latestVersion = isStableReleaseChannel
-    ? transformGithubResponse(githubVersion)
-    : mediaLinkResponse
-    ? transformGcsVersionResponse(mediaLinkResponse)
-    : null
-
-  if (!latestVersion) {
-    return null
-  }
-  const isNewVersionAvailable = !versionsMatch(currentVersion, latestVersion)
-
-  return (
-    <Tooltip content={isNewVersionAvailable ? "Need help?" : "Check Version"} align="bottom" plain>
-      <Button
-        data-testid="header-version-control-button"
-        flavour="borderless"
-        themeType="dark"
-        small
-        neutral={!isNewVersionAvailable}
-        warning={isNewVersionAvailable}
-        name={isNewVersionAvailable ? "update_pending" : "update"}
-        icon={isNewVersionAvailable ? "update_pending" : "update"}
-        data-toggle="modal"
-        data-target="#updateModal"
-      />
-    </Tooltip>
-  )
+  return null
 }
 
 export default VersionControl

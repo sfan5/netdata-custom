@@ -2633,6 +2633,8 @@ function checkForUpdateByVersion(force, callback) {
 }
 
 window.notifyForUpdate = (force) => {
+    if (true) { return; }
+
     versionLog('<p>checking for updates...</p>');
 
     var now = Date.now();
