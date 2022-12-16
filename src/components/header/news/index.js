@@ -3,6 +3,8 @@ import { Button, News as AgentNews } from "@netdata/netdata-ui"
 import Tooltip from "@/src/components/tooltips"
 
 const News = () => {
+  if (true) { return null }
+
   return (
     <AgentNews app="agent">
       {({ toggle, upToDate }) => (
