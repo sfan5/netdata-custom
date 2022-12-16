@@ -51,18 +51,7 @@ if (typeof window.netdataShowAlarms === 'undefined') {
   window.netdataShowAlarms = false;
 }
 
-if (typeof window.netdataRegistryAfterMs !== 'number' || window.netdataRegistryAfterMs < 0) {
-  window.netdataRegistryAfterMs = 0; // 1500;
-}
-
-if (typeof window.netdataRegistry === 'undefined') {
-  // backward compatibility
-  window.netdataRegistry = (typeof netdataNoRegistry !== 'undefined' && netdataNoRegistry === false);
-}
-
-if (window.netdataRegistry === false && typeof netdataRegistryCallback === 'function') {
-  window.netdataRegistry = true;
-}
+window.netdataRegistry = false;
 
 // ----------------------------------------------------------------------------------------------------------------
 // the defaults for all charts

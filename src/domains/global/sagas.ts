@@ -311,6 +311,8 @@ function* fetchHelloSaga({ payload }: Action<FetchHelloPayload>) {
     machineGuid,
   }))
 
+  if (true) { return }
+
   const name = isUsingGlobalRegistry ? MASKED_DATA : hostname
   const url = isUsingGlobalRegistry ? MASKED_DATA : serverDefault
 
