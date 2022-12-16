@@ -54,7 +54,7 @@ function* waitForFullInfoPayload() {
 }
 
 function* injectPosthog(machineGuid: string, personGuid?: string) {
-  if (window.posthog) {
+  if (window.posthog || true) {
     return
   }
   const info: InfoPayload = (yield select(selectFullInfoPayload))
