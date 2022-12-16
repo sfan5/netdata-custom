@@ -226,7 +226,7 @@ AC_ARG_ENABLE(
     [AS_HELP_STRING([--disable-cloud],
                     [Disables all cloud functionality])],
     [ enable_cloud="$enableval" ],
-    [ enable_cloud="detect" ]
+    [ enable_cloud="no" ]
 )
 
 if test "${enable_cloud}" = "no"; then

@@ -18,6 +18,8 @@ include(CheckLibraryExists)
 # set this to see the compilation commands
 #set(CMAKE_VERBOSE_MAKEFILE 1)
 
+message(FATAL_ERROR "Don't use")
+
 # -----------------------------------------------------------------------------
 # Set compilation options according to build type
 
