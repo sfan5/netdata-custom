@@ -43,9 +43,7 @@ if (typeof window.netdataSnapshotData === 'undefined') {
   window.netdataSnapshotData = null;
 }
 
-if (typeof window.netdataShowHelp === 'undefined') {
-  window.netdataShowHelp = true;
-}
+window.netdataShowHelp = false;
 
 if (typeof window.netdataShowAlarms === 'undefined') {
   window.netdataShowAlarms = false;

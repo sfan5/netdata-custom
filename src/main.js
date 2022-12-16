@@ -960,13 +960,7 @@ const netdataDashboard = {
     },
 
     contextInfo: function (id) {
-        var x = this.anyAttribute(this.context, 'info', id, null);
-
-        if (x !== null) {
-            return '<div class="shorten dashboard-context-info netdata-chart-alignment" role="document">' + x + '</div>';
-        } else {
-            return '';
-        }
+        return '';
     },
 
     contextValueRange: function (id) {
@@ -1363,10 +1357,6 @@ function renderPage(menus, data) {
         sidebar += '<li class=""><a href="#' + menuid + '" onClick="return scrollToId(\'' + menuid + '\');">' + menus[menu].icon + ' ' + menus[menu].title + '</a><ul class="nav">';
         html += '<div role="section" class="dashboard-section"><div role="sectionhead"><h1 id="' + menuid + '" role="heading">' + menus[menu].icon + ' ' + menus[menu].title + '</h1></div><div role="section"  class="dashboard-subsection">';
 
-        if (menus[menu].info !== null) {
-            html += menus[menu].info;
-        }
-
         // console.log(' >> ' + menu + ' (' + menus[menu].priority + '): ' + menus[menu].title);
 
         var shtml = '';
@@ -1383,10 +1373,6 @@ function renderPage(menus, data) {
             var submenuid = NETDATA.name2id('menu_' + menu + '_submenu_' + submenu);
             sidebar += '<li class><a href="#' + submenuid + '" onClick="return scrollToId(\'' + submenuid + '\');">' + menus[menu].submenus[submenu].title + '</a></li>';
             shtml += '<div role="section" class="dashboard-section-container" id="' + submenuid + '"><h2 id="' + submenuid + '" class="netdata-chart-alignment" role="heading">' + menus[menu].submenus[submenu].title + '</h2>';
-
-            if (menus[menu].submenus[submenu].info !== null) {
-                shtml += '<div class="dashboard-submenu-info netdata-chart-alignment" role="document">' + menus[menu].submenus[submenu].info + '</div>';
-            }
 
             var head = '<div class="netdata-chart-row">';
             var chtml = '';

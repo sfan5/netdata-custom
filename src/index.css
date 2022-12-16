@@ -17,3 +17,7 @@ code {
     padding-left: 372px;
   }
 }
+
+#footer, #sidebar-end-portal-container {
+  display:none !important;
+}
