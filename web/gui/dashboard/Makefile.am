@@ -26,7 +26,7 @@ dist_web_DATA = \
     $(srcdir)/index.html \
     $(srcdir)/infographic.html \
     $(srcdir)/manifest.json \
-    $(srcdir)/precache-manifest.5fec6109084644adf7bf854243e1a044.js \
+    $(srcdir)/precache-manifest.e3de5227be4b91d11b1e82cb2a278a92.js \
     $(srcdir)/refresh-badges.js \
     $(srcdir)/robots.txt \
     $(srcdir)/service-worker.js \
@@ -139,17 +139,17 @@ dist_webstaticcss_DATA = \
     $(srcdir)/static/css/2.c454aab8.chunk.css.map \
     $(srcdir)/static/css/4.a36e3b73.chunk.css \
     $(srcdir)/static/css/4.a36e3b73.chunk.css.map \
-    $(srcdir)/static/css/main.53ba10f1.chunk.css \
-    $(srcdir)/static/css/main.53ba10f1.chunk.css.map \
+    $(srcdir)/static/css/main.6e0a0d76.chunk.css \
+    $(srcdir)/static/css/main.6e0a0d76.chunk.css.map \
     $(NULL)
 
 webstaticjsdir=$(webdir)/static/js
 dist_webstaticjs_DATA = \
     $(srcdir)/static/js/10.a5cd7d0e.chunk.js \
     $(srcdir)/static/js/10.a5cd7d0e.chunk.js.map \
-    $(srcdir)/static/js/2.92ca8446.chunk.js \
-    $(srcdir)/static/js/2.92ca8446.chunk.js.LICENSE \
-    $(srcdir)/static/js/2.92ca8446.chunk.js.map \
+    $(srcdir)/static/js/2.fd6adc99.chunk.js \
+    $(srcdir)/static/js/2.fd6adc99.chunk.js.LICENSE \
+    $(srcdir)/static/js/2.fd6adc99.chunk.js.map \
     $(srcdir)/static/js/3.f137faca.chunk.js \
     $(srcdir)/static/js/3.f137faca.chunk.js.map \
     $(srcdir)/static/js/4.2dbcd906.chunk.js \
@@ -165,9 +165,9 @@ dist_webstaticjs_DATA = \
     $(srcdir)/static/js/8.b4161ea2.chunk.js.map \
     $(srcdir)/static/js/9.a4363968.chunk.js \
     $(srcdir)/static/js/9.a4363968.chunk.js.map \
-    $(srcdir)/static/js/main.7d1bdca1.chunk.js \
-    $(srcdir)/static/js/main.7d1bdca1.chunk.js.LICENSE \
-    $(srcdir)/static/js/main.7d1bdca1.chunk.js.map \
+    $(srcdir)/static/js/main.ff3c482d.chunk.js \
+    $(srcdir)/static/js/main.ff3c482d.chunk.js.LICENSE \
+    $(srcdir)/static/js/main.ff3c482d.chunk.js.map \
     $(srcdir)/static/js/runtime-main.08abed8f.js \
     $(srcdir)/static/js/runtime-main.08abed8f.js.map \
     $(NULL)
